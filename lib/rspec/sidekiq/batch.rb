@@ -24,6 +24,10 @@ if defined?(Sidekiq::Batch)
         def total
           ::Sidekiq::Worker.jobs.size
         end
+
+        def pending
+          0
+        end
       end
     end
   end
